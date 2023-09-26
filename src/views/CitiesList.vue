@@ -1,0 +1,16 @@
+<template>
+    <div class="citiesList">
+        <h1>Météo - Liste des villes</h1>
+    </div>
+</template>
+  
+<style>
+@media (min-width: 1024px) {
+    .about {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+}
+</style>
+  
