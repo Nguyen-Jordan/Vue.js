@@ -8,6 +8,7 @@
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/villes">Villes</RouterLink>
       </nav>
     </div>
   </header>
