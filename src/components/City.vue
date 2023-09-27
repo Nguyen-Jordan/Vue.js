@@ -1,22 +1,21 @@
 <template>
-    
-    <h1>{{ meteo.name }}</h1>
-    <p>le temp de la météo aujourd'hui: {{ meteo.weather }}</p>
-    <p>{{ meteo.temperature }} °C</p>
-    <p>{{  meteo.updatedAt.toLocaleString() }}</p>
+    <div class="ville-bloc">
+        <h2>{{ name }}</h2>
+        <div class="ville-content">
+            <p class="weather">temp <br><span>{{ weather }}</span></p><br>
+            <p class="temp">La température moyenne<br> <span>{{ temperature }} °C</span></p>
+            <p class="date">La dernière actualisation:<br><span>{{ updatedAt }}</span></p>
+        </div>
+    </div>
 </template>
 
 <script>
 export default {
     data() {
         return {
-            meteo: {
-                name: 'Annecy', // nom de la ville
-                weather: 'Peu nuageux', // descriptif météo 
-                temperature: 20.55, // température en °C
-                updatedAt: new Date() // date de dernière mise à jour
-            }
+
         }
-    }
+    },
+    props: { name: String, weather: String, temperature: Number, updatedAt: Date }
 }
 </script>
